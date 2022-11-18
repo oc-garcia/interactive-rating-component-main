@@ -11,10 +11,130 @@
   font-family: "Overpass", sans-serif;
 }
 
+body {
+  background: black;
+}
+
+.rating__container-start,
+.rating__container-end {
+  margin: 5rem 10% 5rem 10%;
+  width: 70%;
+  background: var(--Very_Dark_Blue);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.rating__circle {
+  background: url(/images/icon-star.svg) var(--Dark_Blue);
+  background-repeat: no-repeat;
+  background-position: center right 6px;
+  display: flex;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.rating__title {
+  color: var(--White);
+}
+
+.rating__message {
+  color: var(--Light_Grey);
+}
+
+.rating__buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating__btn {
+  border-radius: 50%;
+  border: none;
+  padding: 1rem 1.3rem;
+  background: var(--Dark_Blue);
+  color: var(--Medium_Grey);
+  font-weight: 700;
+}
+
+.rating__submit {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+  border-radius: 30px;
+  border: none;
+  color: var(--White);
+  background: var(--Orange);
+}
+
+.rating__submit:hover,
+.rating__btn {
+  cursor: pointer;
+}
+
+.rating__container-end {
+  display: block;
+}
+
+.img__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating__choice-end-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Dark_Blue);
+  height: 1.5rem;
+  border-radius: 10px;
+}
+
+.rating__title-end {
+  color: var(--White);
+  text-align: center;
+}
+
+.rating__message-end {
+  color: var(--Light_Grey);
+  text-align: center;
+}
+
+.rating__choice-end {
+  color: var(--Orange);
+  font-size: 15px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: var(--White);
+  width: 80%;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Orange);
+}
+
+@media only screen and (min-width: 600px) {
+  .rating__container-start,
+  .rating__container-end {
+    margin: 5rem auto;
+    height: 270px;
+    width: 500px;
+    background: var(--Very_Dark_Blue);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+    width: 100%;
+  }
 }
