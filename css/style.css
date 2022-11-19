@@ -76,7 +76,7 @@ body {
 }
 
 .rating__container-end {
-  display: block;
+  display: none;
 }
 
 .img__container {
