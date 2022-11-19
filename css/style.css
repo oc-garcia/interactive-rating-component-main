@@ -25,7 +25,7 @@ body {
 }
 
 .rating__circle {
-  background: url(/images/icon-star.svg) var(--Dark_Blue);
+  background: url(images/icon-star.svg) var(--Dark_Blue);
   background-repeat: no-repeat;
   background-position: center right 6px;
   display: flex;
