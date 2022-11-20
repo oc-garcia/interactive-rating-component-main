@@ -6,11 +6,13 @@ const btn5 = document.getElementById("5");
 
 let btns = [btn1, btn2, btn3, btn4, btn5];
 
-for (let i = 0; i < btns.length; i++) {
+function changeAppearance() {
+  for (let i = 0; i < btns.length; i++) {
     const forBtns = btns[i];
-    function changeAppearance() {
-        
-    }
-    forBtns.addEventListener("click", )
+    console.log(forBtns);
+  }
 }
 
+btns.addEventListener("click", changeAppearance());
+
+function submitRate() {}
