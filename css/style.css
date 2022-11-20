@@ -25,7 +25,7 @@ body {
 }
 
 .rating__circle {
-  background: url(images/icon-star.svg) var(--Dark_Blue);
+  background: url(/images/icon-star.svg) var(--Dark_Blue);
   background-repeat: no-repeat;
   background-position: center right 6px;
   display: flex;
@@ -58,6 +58,15 @@ body {
   font-weight: 700;
 }
 
+.rating__btn-active {
+  border-radius: 50%;
+  border: none;
+  padding: 1rem 1.3rem;
+  background: var(--Orange);
+  color: var(--White);
+  font-weight: 700;
+}
+
 .rating__submit {
   margin-top: 1.5rem;
   width: 100%;
@@ -71,7 +80,8 @@ body {
 }
 
 .rating__submit:hover,
-.rating__btn {
+.rating__btn,
+.rating__btn-active {
   cursor: pointer;
 }
 
