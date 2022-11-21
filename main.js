@@ -112,15 +112,23 @@ function changeAppearance(btn) {
 function submitRate() {
   if (btn1.className == "rating__btn-active") {
     rateSubmitted.innerHTML = "You selected 1 out of 5";
+    activeContainer.className = "rating__container-end";
+    inactiveContainer.className = "rating__container-start";
   } else if (btn2.className == "rating__btn-active") {
     rateSubmitted.innerHTML = "You selected 2 out of 5";
+    activeContainer.className = "rating__container-end";
+    inactiveContainer.className = "rating__container-start";
   } else if (btn3.className == "rating__btn-active") {
     rateSubmitted.innerHTML = "You selected 3 out of 5";
+    activeContainer.className = "rating__container-end";
+    inactiveContainer.className = "rating__container-start";
   } else if (btn4.className == "rating__btn-active") {
     rateSubmitted.innerHTML = "You selected 4 out of 5";
+    activeContainer.className = "rating__container-end";
+    inactiveContainer.className = "rating__container-start";
   } else if (btn5.className == "rating__btn-active") {
     rateSubmitted.innerHTML = "You selected 5 out of 5";
+    activeContainer.className = "rating__container-end";
+    inactiveContainer.className = "rating__container-start";
   }
-  activeContainer.className = "rating__container-end";
-  inactiveContainer.className = "rating__container-start";
 }
