@@ -3,12 +3,17 @@ const btn2 = document.getElementById("2");
 const btn3 = document.getElementById("3");
 const btn4 = document.getElementById("4");
 const btn5 = document.getElementById("5");
+const submit = document.getElementById("submit");
+const rateSubmitted = document.getElementById("rateSubmitted");
+const activeContainer = document.getElementById("activeContainer");
+const inactiveContainer = document.getElementById("inactiveContainer");
 
 btn1.addEventListener("click", () => changeAppearance(btn1));
 btn2.addEventListener("click", () => changeAppearance(btn2));
 btn3.addEventListener("click", () => changeAppearance(btn3));
 btn4.addEventListener("click", () => changeAppearance(btn4));
 btn5.addEventListener("click", () => changeAppearance(btn5));
+submit.addEventListener("click", submitRate);
 
 /*
 btn1.addEventListener("click", function () {
@@ -106,14 +111,16 @@ function changeAppearance(btn) {
 
 function submitRate() {
   if (btn1.className == "rating__btn-active") {
-    console.log("1");
+    rateSubmitted.innerHTML = "You selected 1 out of 5";
   } else if (btn2.className == "rating__btn-active") {
-    console.log("2");
+    rateSubmitted.innerHTML = "You selected 2 out of 5";
   } else if (btn3.className == "rating__btn-active") {
-    console.log("3");
+    rateSubmitted.innerHTML = "You selected 3 out of 5";
   } else if (btn4.className == "rating__btn-active") {
-    console.log("4");
+    rateSubmitted.innerHTML = "You selected 4 out of 5";
   } else if (btn5.className == "rating__btn-active") {
-    console.log("5");
+    rateSubmitted.innerHTML = "You selected 5 out of 5";
   }
+  activeContainer.className = "rating__container-end";
+  inactiveContainer.className = "rating__container-start";
 }

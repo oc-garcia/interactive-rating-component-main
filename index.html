@@ -10,7 +10,7 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body>
-    <section class="rating__container-start">
+    <section class="rating__container-start" id="activeContainer">
       <div class="rating__circle"></div>
       <h1 class="rating__title">How did we do?</h1>
       <p class="rating__message">
@@ -24,14 +24,14 @@
         <button value="4" id="4" class="rating__btn">4</button>
         <button value="5" id="5" class="rating__btn">5</button>
       </div>
-      <button type="submit" class="rating__submit">SUBMIT</button>
+      <button type="submit" class="rating__submit" id="submit">SUBMIT</button>
     </section>
-    <section class="rating__container-end">
+    <section class="rating__container-end" id="inactiveContainer">
       <div class="img__container">
         <img src="/images/illustration-thank-you.svg" alt="" class="rating__img-end" />
       </div>
       <div class="rating__choice-end-container">
-        <p class="rating__choice-end">You selected * out of 5</p>
+        <p class="rating__choice-end" id="rateSubmitted">You selected * out of 5</p>
       </div>
       <h2 class="rating__title-end">Thank you!</h2>
       <p class="rating__message-end">
