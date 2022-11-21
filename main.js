@@ -33,11 +33,87 @@ btn5.addEventListener("click", function () {
 */
 
 function changeAppearance(btn) {
-  if (btn.className == "rating__btn") {
-    btn.className = "rating__btn-active";
-  } else {
-    btn.className = "rating__btn";
+  switch (btn) {
+    case btn1:
+      if (
+        btn1.className == "rating__btn" &&
+        btn2.className == "rating__btn" &&
+        btn3.className == "rating__btn" &&
+        btn4.className == "rating__btn" &&
+        btn5.className == "rating__btn"
+      ) {
+        btn1.className = "rating__btn-active";
+      } else {
+        btn1.className = "rating__btn";
+      }
+      break;
+    case btn2:
+      if (
+        btn1.className == "rating__btn" &&
+        btn2.className == "rating__btn" &&
+        btn3.className == "rating__btn" &&
+        btn4.className == "rating__btn" &&
+        btn5.className == "rating__btn"
+      ) {
+        btn2.className = "rating__btn-active";
+      } else {
+        btn2.className = "rating__btn";
+      }
+      break;
+    case btn3:
+      if (
+        btn1.className == "rating__btn" &&
+        btn2.className == "rating__btn" &&
+        btn3.className == "rating__btn" &&
+        btn4.className == "rating__btn" &&
+        btn5.className == "rating__btn"
+      ) {
+        btn3.className = "rating__btn-active";
+      } else {
+        btn3.className = "rating__btn";
+      }
+      break;
+    case btn4:
+      if (
+        btn1.className == "rating__btn" &&
+        btn2.className == "rating__btn" &&
+        btn3.className == "rating__btn" &&
+        btn4.className == "rating__btn" &&
+        btn5.className == "rating__btn"
+      ) {
+        btn4.className = "rating__btn-active";
+      } else {
+        btn4.className = "rating__btn";
+      }
+      break;
+    case btn5:
+      if (
+        btn1.className == "rating__btn" &&
+        btn2.className == "rating__btn" &&
+        btn3.className == "rating__btn" &&
+        btn4.className == "rating__btn" &&
+        btn5.className == "rating__btn"
+      ) {
+        btn5.className = "rating__btn-active";
+      } else {
+        btn5.className = "rating__btn";
+      }
+      break;
+    default:
+      break;
   }
 }
 
-function submitRate() {}
+function submitRate() {
+  if (btn1.className == "rating__btn-active") {
+    console.log("1");
+  } else if (btn2.className == "rating__btn-active") {
+    console.log("2");
+  } else if (btn3.className == "rating__btn-active") {
+    console.log("3");
+  } else if (btn4.className == "rating__btn-active") {
+    console.log("4");
+  } else if (btn5.className == "rating__btn-active") {
+    console.log("5");
+  }
+}
